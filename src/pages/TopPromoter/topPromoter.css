@@ -1,0 +1,19 @@
+.button__style {
+    display: flex;
+padding: 3px 12.5px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+    border-radius: 4px;
+background: var(--Black, #2A2A2A);
+}
+.follwo__style{
+    color: var(--White, #FFF);
+
+/* 12 semi */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
