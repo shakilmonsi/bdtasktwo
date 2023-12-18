@@ -5,7 +5,37 @@ import Medal from "../../assets/promotorImg/logo/Medal 5.svg";
 import promoterlogo from "../../assets/promotorImg/logo/promoter.png";
 import rating from "../../assets/promotorImg/logo/rating.svg";
 import Frame from "../../assets/promotorImg/logo/Frame (1).svg";
+
+
+
+
+
+
+
+
 const TopPromoter = () => {
+
+  const promoterData=[
+    {
+        id: 1,
+         name:  'fluoride tretment',
+         description: 'pless add a services and may life is ok ',
+    img:promoter
+        },
+    {
+        id: 2,
+         name:  'cavity tretment',
+         description: 'pless add a services and may life is ok ',
+    img:promoter
+        },
+    {
+        id: 3,
+         name:  'whitenig tretment',
+         description: 'pless add a services and may life is ok ',
+    img:promoter
+        },
+]
+
   return (
     <div className="flex justify-items-center px-4 mx-atuo	">
       <div className="card w-99.62 h-98  rounded-lg border border-verified-2 bg-white ">
@@ -52,5 +82,39 @@ const TopPromoter = () => {
     </div>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default TopPromoter;
