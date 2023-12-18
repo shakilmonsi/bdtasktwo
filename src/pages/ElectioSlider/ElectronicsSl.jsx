@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
