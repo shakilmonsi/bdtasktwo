@@ -2,7 +2,7 @@ import React from 'react';
 import promoter from "../../assets/promotorImg/logo/promoter.png";
 import { Link } from 'react-router-dom';
 
-function FollowedCard(props) {
+function TrendingCard(props) {
     const { trend, userVerifide, hot, grystart,star,love,coopy,ay,addCard ,img,verifide} = props;
 
     return (
@@ -129,4 +129,4 @@ function FollowedCard(props) {
     );
 }
 
-export default FollowedCard;
+export default TrendingCard;

@@ -12,6 +12,7 @@ import TopElectronicDeals from "../../TopElectronicDeals/TopElectronicDeals";
 import SpeakersHeadsets from "../../Speakers&Headsets/SpeakersHeadsets";
 import LaptopAccessories from "../../LaptopAccessories/LaptopAccessories";
 import Getthebestap from "../../Getthebestapp/Getthebestap";
+import TrendingdealsElectronics from "../../TrendingdealsElectronics/TrendingdealsElectronics";
 
 const Home = () => {
   return (
@@ -30,6 +31,8 @@ const Home = () => {
 
       <TopPromoter></TopPromoter>
       <Electronics></Electronics>
+
+      <TrendingdealsElectronics></TrendingdealsElectronics>
       <Getthebestap></Getthebestap>
       <LaptopAccessories></LaptopAccessories>
       <SpeakersHeadsets></SpeakersHeadsets>
