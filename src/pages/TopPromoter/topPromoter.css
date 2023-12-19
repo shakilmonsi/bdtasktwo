@@ -1,4 +1,4 @@
-.button__style {
+/* .button__style {
     display: flex;
 padding: 3px 12.5px;
 justify-content: center;
@@ -11,9 +11,9 @@ background: var(--Black, #2A2A2A);
     color: var(--White, #FFF);
 
 /* 12 semi */
-font-family: Inter;
+/* font-family: Inter;
 font-size: 12px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-}
+/* } */ 

@@ -18,6 +18,8 @@ import Deliveryorder from "../../deliveryorder/Deliveryorder";
 import NewArrivalProducts from "../../NewArrivalProducts/NewArrivalProducts";
 import TrustedBrands from "../../TrustedBrands/TrustedBrands";
 import ExploreourtopHomeBusiness from "../../ExploreourtopHomeBusiness/ExploreourtopHomeBusiness";
+import Black from "../../Black/Black";
+import Exploreourtopbusinesssellers from "../../Exploreourtopbusinesssellers/Exploreourtopbusinesssellers";
 
 const Home = () => {
   return (
@@ -28,12 +30,18 @@ const Home = () => {
       <ElectronicsSl></ElectronicsSl>
       <FollowedProducts></FollowedProducts>
 
-      <NewArrvls></NewArrvls>
+
 
       <ModErnBanner></ModErnBanner>
-
       <TopPromoter></TopPromoter>
-           <Electronics></Electronics>
+      <Electronics></Electronics>
+
+
+
+
+      <NewArrvls></NewArrvls>
+      <Exploreourtopbusinesssellers></Exploreourtopbusinesssellers>
+      <Black></Black>
       <ExploreourtopHomeBusiness></ExploreourtopHomeBusiness>
       <TrustedBrands></TrustedBrands>
       <NewArrivalProducts></NewArrivalProducts>
