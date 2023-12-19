@@ -10,7 +10,7 @@ import promoter from  "../../assets/promotorImg/logo/promoter.png"
 
    
 
-          <div className=" card rounded-md bg-white shadow-md overflow-hidden	gap-row-20" style={{height:"260px",width:"221px"}}>
+          <div className=" card rounded-md bg-white shadow-md overflow-hidden	gap-row-20  sm:ms-8" style={{height:"260px",width:"221px"}}>
   <div className="bg-white 	">
  <div className='bg-red m-3' >
  <img src={img} alt={alt}className=" ms-8 mt-2 p-4" />

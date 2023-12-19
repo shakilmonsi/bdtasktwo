@@ -1,7 +1,7 @@
 import React from "react";
 
 
- const PromoterCard = (props) => {
+ const ExploreoCard = (props) => {
     const { title, description, image, alt,delPirce,price,promoterlogo,Medal,rating ,Frame} = props;
 
     return (
@@ -62,5 +62,4 @@ import React from "react";
  };
  
 
-
-export default PromoterCard;
+export default ExploreoCard;

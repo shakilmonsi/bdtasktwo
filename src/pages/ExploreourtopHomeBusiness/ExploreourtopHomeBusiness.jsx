@@ -22,10 +22,11 @@ import promoter6 from "../../assets/promotorImg/promoter6.png";
 import promoter7 from "../../assets/promotorImg/promoter7.png";
 import promoter8 from "../../assets/promotorImg//promoter9.png";
 
-import PromoterCard from "./PromoterCard";
-import { Link } from "react-router-dom";
 
-function TopPromoterSlider(props) {
+import { Link } from "react-router-dom";
+import ExploreoCard from "./ExploreoCard";
+
+function ExploreourtopHomeBusiness(props) {
   const Products = [
     {
       id: 1,
@@ -242,7 +243,7 @@ function TopPromoterSlider(props) {
 
     <div  className="flex justify-between	"> 
       <div>
-        <h4 className="text-gray-700 font-inter text-md font-medium">Explore our top promoters</h4>
+        <h4 className="text-gray-700 font-inter text-md font-medium">Explore our top Home Business</h4>
       </div>
       <div>
         <Link className="text-gray-800 font-inter text-xs font-semibold" to="/Viewall">View all</Link>
@@ -288,7 +289,7 @@ function TopPromoterSlider(props) {
       {Products.map((item) => {
         return (
           <SwiperSlide key={item.id}>
-            <PromoterCard
+            <ExploreoCard
               key={item.id}
               image={item.img}
               title={item.name}
@@ -308,4 +309,5 @@ function TopPromoterSlider(props) {
   </section>
   );
 }
-export default TopPromoterSlider;
+
+export default ExploreourtopHomeBusiness;

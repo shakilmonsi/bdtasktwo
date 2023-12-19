@@ -13,6 +13,11 @@ import SpeakersHeadsets from "../../Speakers&Headsets/SpeakersHeadsets";
 import LaptopAccessories from "../../LaptopAccessories/LaptopAccessories";
 import Getthebestap from "../../Getthebestapp/Getthebestap";
 import TrendingdealsElectronics from "../../TrendingdealsElectronics/TrendingdealsElectronics";
+import RecommendedForYou from "../../NewArrival/RecommendedForYou";
+import Deliveryorder from "../../deliveryorder/Deliveryorder";
+import NewArrivalProducts from "../../NewArrivalProducts/NewArrivalProducts";
+import TrustedBrands from "../../TrustedBrands/TrustedBrands";
+import ExploreourtopHomeBusiness from "../../ExploreourtopHomeBusiness/ExploreourtopHomeBusiness";
 
 const Home = () => {
   return (
@@ -27,11 +32,14 @@ const Home = () => {
 
       <ModErnBanner></ModErnBanner>
 
-      <h3 className="text-center">home</h3>
-
       <TopPromoter></TopPromoter>
-      <Electronics></Electronics>
-
+           <Electronics></Electronics>
+      <ExploreourtopHomeBusiness></ExploreourtopHomeBusiness>
+      <TrustedBrands></TrustedBrands>
+      <NewArrivalProducts></NewArrivalProducts>
+      <Deliveryorder></Deliveryorder>
+      <RecommendedForYou></RecommendedForYou>
+      <ModErnBanner></ModErnBanner>
       <TrendingdealsElectronics></TrendingdealsElectronics>
       <Getthebestap></Getthebestap>
       <LaptopAccessories></LaptopAccessories>

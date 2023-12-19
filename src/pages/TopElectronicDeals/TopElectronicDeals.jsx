@@ -76,7 +76,7 @@ const  TopElecData= [
 
     return (
         <div>
-                <div  className="flex justify-between	px-14 py-4"> 
+                <div  className="flex justify-between	px-14 py-4 "> 
       <div>
         <h4 className="text-gray-700 font-inter text-md font-medium">Top Electronic Deals</h4>
       </div>

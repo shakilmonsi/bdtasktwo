@@ -1,12 +1,9 @@
-
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import {} from "swiper";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
-
 
 import arrowdown from "../../assets/electronice/uptodown/up.svg";
 import arrowup from "../../assets/electronice/uptodown/down.svg";
@@ -18,7 +15,6 @@ import img4 from "../../assets/electronice/elec4.png";
 import img5 from "../../assets/electronice/image 59 (1).png";
 import img6 from "../../assets/electronice/elec4 (2).png";
 import LaptopACard from "./LaptopACard";
-
 
 const Products = [
   {
@@ -153,8 +149,6 @@ const Products = [
     description: "BestSeller",
     img: img6,
   },
-
- 
 ];
 
 const LaptopAccessories = () => {
@@ -184,7 +178,9 @@ const LaptopAccessories = () => {
   return (
     <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
       <div className="flex  items-center  justify-between">
-        <h6 className="text-gray-700 font-inter text-base font-semibold">Laptop & Accessories</h6>
+        <h6 className="text-gray-700 font-inter text-base font-semibold">
+          Laptop & Accessories
+        </h6>
 
         <div className="flex">
           <img
@@ -203,10 +199,7 @@ const LaptopAccessories = () => {
       <div className="">
         {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
 
-        <div className="post-box">
-          <div className="bg-left"></div>
-          <div className="bg-right"></div>
-
+        <div className="">
           <div className="post-heading">
             <div className="heading-box">
               <div className="pagination-slide">
@@ -221,6 +214,25 @@ const LaptopAccessories = () => {
               className={` ${"mySwiper"}`}
               ref={SlideRef}
               slidesPerView={6}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+
+                1024: {
+                  slidesPerView: 6,
+                  spaceBetween: 40,
+                },
+              }}
               onSlideChange={onSlideChange}
               pagination={{
                 el: ".swiper-paginations",

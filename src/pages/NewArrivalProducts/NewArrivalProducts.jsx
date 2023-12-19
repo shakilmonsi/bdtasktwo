@@ -20,7 +20,8 @@ import hot from "../../assets/FollowedProducts/logo/hot.svg";
 import userVerifide from "../../assets/FollowedProducts/logo/userVerifide.svg";
 import addCard from "../../assets/FollowedProducts/logo/cart white.png";
 
-import SpeakersCard from "./SpeakersCard";
+import NewArrivalCard from "./NewArrivalCard";
+import { Link } from "react-router-dom";
 const followedProducts = [
   {
     id: 1,
@@ -504,7 +505,7 @@ const followedProducts = [
   },
 ];
 
-const SpeakersHeadsets = () => {
+const NewArrivalProducts = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
     isFirst: true,
     isLast: false,
@@ -530,27 +531,15 @@ const SpeakersHeadsets = () => {
 
   return (
     <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-      <div className="flex  items-center  justify-between">
+    <div className="flex  items-center  justify-between">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
-            Speakers & Headsets
-          </h6>
+          New Arrival          </h6>
         </div>
-
-        <div className="flex">
-          <img
-            src={arrowup}
-            className={`Arrow ${isFirst ? "disabled" : ""}`}
-            onClick={handlePrev}
-          />
-          <img
-            src={arrowdown}
-            className={`Arrow ${isLast ? "disabled" : ""}`}
-            onClick={handleNext}
-          />
+        <div className="">
+          <Link className="text-rgba-gray-700 font-inter text-xs font-semibold" to="/">View all</Link>
         </div>
       </div>
-
       <div className="">
         {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
 
@@ -602,7 +591,7 @@ const SpeakersHeadsets = () => {
               {followedProducts?.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
-                    <SpeakersCard
+                    <NewArrivalCard
                       trend={item.trend}
                       userVerifide={item.userVerifide}
                       hot={item.hot}
@@ -627,4 +616,5 @@ const SpeakersHeadsets = () => {
   );
 };
 
-export default SpeakersHeadsets;
+
+export default NewArrivalProducts;

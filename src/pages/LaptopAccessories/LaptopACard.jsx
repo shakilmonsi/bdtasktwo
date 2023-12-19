@@ -9,7 +9,7 @@ import React from 'react';
 
    
 
-          <div className=" card rounded-md bg-white shadow-md overflow-hidden	" style={{height:"260px",width:"221px"}}>
+          <div className="ms-6 card rounded-md bg-white shadow-md overflow-hidden	" style={{height:"260px",width:"221px"}}>
   <div className="bg-white h-60">
  <div className='bg-red m-3' >
  <img src={image} alt={alt}className=" ms-8 mt-2 p-4" />

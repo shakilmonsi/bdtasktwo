@@ -6,8 +6,7 @@ import {} from "swiper";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import arrowdown from "../../assets/electronice/uptodown/up.svg";
-import arrowup from "../../assets/electronice/uptodown/down.svg";
+
 import FollowedProductss from "../../assets/FollowedProducts/FollowedProducts.png";
 import ay from "../../assets/FollowedProducts/logo/ay.svg";
 import coopy from "../../assets/FollowedProducts/logo/coopy.svg";
@@ -20,7 +19,8 @@ import hot from "../../assets/FollowedProducts/logo/hot.svg";
 import userVerifide from "../../assets/FollowedProducts/logo/userVerifide.svg";
 import addCard from "../../assets/FollowedProducts/logo/cart white.png";
 
-import SpeakersCard from "./SpeakersCard";
+import { Link } from "react-router-dom";
+import RecomCard from "./RecomCard";
 const followedProducts = [
   {
     id: 1,
@@ -504,50 +504,40 @@ const followedProducts = [
   },
 ];
 
-const SpeakersHeadsets = () => {
+const RecommendedForYou = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
-    isFirst: true,
-    isLast: false,
-  });
-  const SlideRef = useRef();
+      isFirst: true,
+      isLast: false,
+   });
+   const SlideRef = useRef();
 
-  const handleNext = () => {
-    SlideRef.current.swiper.slideNext();
-  };
+   const handleNext = () => {
+      SlideRef.current.swiper.slideNext();
+   };
 
-  const handlePrev = () => {
-    SlideRef.current.swiper.slidePrev();
-  };
+   const handlePrev = () => {
+      SlideRef.current.swiper.slidePrev();
+   };
 
-  const onSlideChange = (swiper) => {
-    handleSlideByState({
-      isFirst: swiper.isBeginning,
-      isLast: swiper.isEnd,
-    });
-  };
+   const onSlideChange = (swiper) => {
+      handleSlideByState({
+         isFirst: swiper.isBeginning,
+         isLast: swiper.isEnd,
+      });
+   };
 
-  const { isLast, isFirst } = slideBegOrNot;
+   const { isLast, isFirst } = slideBegOrNot;
 
   return (
     <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
       <div className="flex  items-center  justify-between">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
-            Speakers & Headsets
+          Recommended For You
           </h6>
         </div>
-
-        <div className="flex">
-          <img
-            src={arrowup}
-            className={`Arrow ${isFirst ? "disabled" : ""}`}
-            onClick={handlePrev}
-          />
-          <img
-            src={arrowdown}
-            className={`Arrow ${isLast ? "disabled" : ""}`}
-            onClick={handleNext}
-          />
+        <div className="">
+          <Link className="text-rgba-gray-700 font-inter text-xs font-semibold" to="/">View all</Link>
         </div>
       </div>
 
@@ -569,28 +559,9 @@ const SpeakersHeadsets = () => {
             <Swiper
               autoplay={{ delay: 1000 }}
               spaceBetween={0}
-              className={`p-3 ${"mySwiper"}`}
+              className={` ${"mySwiper"}`}
               ref={SlideRef}
               slidesPerView={6}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-                480: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-
-                1024: {
-                  slidesPerView: 6,
-                  spaceBetween: 40,
-                },
-              }}
               onSlideChange={onSlideChange}
               pagination={{
                 el: ".swiper-paginations",
@@ -602,7 +573,7 @@ const SpeakersHeadsets = () => {
               {followedProducts?.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
-                    <SpeakersCard
+                    <RecomCard
                       trend={item.trend}
                       userVerifide={item.userVerifide}
                       hot={item.hot}
@@ -626,5 +597,4 @@ const SpeakersHeadsets = () => {
     </section>
   );
 };
-
-export default SpeakersHeadsets;
+export default RecommendedForYou;
