@@ -20,6 +20,8 @@ import TrustedBrands from "../../TrustedBrands/TrustedBrands";
 import ExploreourtopHomeBusiness from "../../ExploreourtopHomeBusiness/ExploreourtopHomeBusiness";
 import Black from "../../Black/Black";
 import Exploreourtopbusinesssellers from "../../Exploreourtopbusinesssellers/Exploreourtopbusinesssellers";
+import TopDealsoftheweek from "../../TopDealsoftheweek/TopDealsoftheweek";
+import DelasSection from "../../DealsYouSection/DelasSection";
 
 const Home = () => {
   return (
@@ -30,15 +32,13 @@ const Home = () => {
       <ElectronicsSl></ElectronicsSl>
       <FollowedProducts></FollowedProducts>
 
-
-
       <ModErnBanner></ModErnBanner>
       <TopPromoter></TopPromoter>
       <Electronics></Electronics>
 
-
-
-
+   
+      <DelasSection></DelasSection>
+      <TopDealsoftheweek></TopDealsoftheweek>
       <NewArrvls></NewArrvls>
       <Exploreourtopbusinesssellers></Exploreourtopbusinesssellers>
       <Black></Black>

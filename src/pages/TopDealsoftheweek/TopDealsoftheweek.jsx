@@ -6,6 +6,8 @@ import {} from "swiper";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+import arrowdown from "../../assets/electronice/uptodown/up.svg";
+import arrowup from "../../assets/electronice/uptodown/down.svg";
 import FollowedProductss from "../../assets/FollowedProducts/FollowedProducts.png";
 import ay from "../../assets/FollowedProducts/logo/ay.svg";
 import coopy from "../../assets/FollowedProducts/logo/coopy.svg";
@@ -18,8 +20,8 @@ import hot from "../../assets/FollowedProducts/logo/hot.svg";
 import userVerifide from "../../assets/FollowedProducts/logo/userVerifide.svg";
 import addCard from "../../assets/FollowedProducts/logo/cart white.png";
 
-import TrendingCard from "./TrendingCard";
 import { Link } from "react-router-dom";
+import TopDealsoftheweekCard from "./TopDealsoftheweekCard";
 const followedProducts = [
   {
     id: 1,
@@ -503,62 +505,48 @@ const followedProducts = [
   },
 ];
 
-const TrendingdealsElectronics = () => {
+const TopDealsoftheweek = () => {
   const [slideBegOrNot, handleSlideByState] = useState({
-    isFirst: true,
-    isLast: false,
-  });
-  const SlideRef = useRef();
+      isFirst: true,
+      isLast: false,
+   });
+   const SlideRef = useRef();
 
-  const handleNext = () => {
-    SlideRef.current.swiper.slideNext();
-  };
+   const handleNext = () => {
+      SlideRef.current.swiper.slideNext();
+   };
 
-  const handlePrev = () => {
-    SlideRef.current.swiper.slidePrev();
-  };
+   const handlePrev = () => {
+      SlideRef.current.swiper.slidePrev();
+   };
 
-  const onSlideChange = (swiper) => {
-    handleSlideByState({
-      isFirst: swiper.isBeginning,
-      isLast: swiper.isEnd,
-    });
-  };
+   const onSlideChange = (swiper) => {
+      handleSlideByState({
+         isFirst: swiper.isBeginning,
+         isLast: swiper.isEnd,
+      });
+   };
 
-  const { isLast, isFirst } = slideBegOrNot;
+   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-      <div className="flex  items-center  justify-between">
+    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-12 py-4">
+      <div className="flex  items-center  justify-between py-4">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
-            Trending deals in Electronics
-          </h6>
+          Top Deals of the week          </h6>
         </div>
         <div className="">
-          <Link
-            className="text-rgba-gray-700 font-inter text-xs font-semibold"
-            to="/"
-          >
-            View all
-          </Link>
+          <Link className="text-rgba-gray-700 font-inter text-xs font-semibold" to="/">View all</Link>
         </div>
       </div>
 
-      <div className="">
+      <div className="p-3">
         {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
 
-        <div className="post-box">
-          <div className="bg-left"></div>
-          <div className="bg-right"></div>
+        <div className="">
+         
 
-          <div className="post-heading">
-            <div className="heading-box">
-              <div className="pagination-slide">
-                <p className="swiper-paginations"></p>
-              </div>
-            </div>
-          </div>
           <div className="post-conatin">
             <Swiper
               autoplay={{ delay: 1000 }}
@@ -577,7 +565,7 @@ const TrendingdealsElectronics = () => {
               {followedProducts?.map((item) => {
                 return (
                   <SwiperSlide key={item.id}>
-                    <TrendingCard
+                    <TopDealsoftheweekCard
                       trend={item.trend}
                       userVerifide={item.userVerifide}
                       hot={item.hot}
@@ -602,4 +590,5 @@ const TrendingdealsElectronics = () => {
   );
 };
 
-export default TrendingdealsElectronics;
+
+export default TopDealsoftheweek;
