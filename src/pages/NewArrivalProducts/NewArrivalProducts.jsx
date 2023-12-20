@@ -530,8 +530,8 @@ const NewArrivalProducts = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-    <div className="flex  items-center  justify-between">
+    <section className="mt-4 backdrop-filter backdrop-blur-md ps-20 pe-20 py-4">
+    <div className="flex  items-center  justify-between py-4 pe-1">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
           New Arrival          </h6>
@@ -540,21 +540,11 @@ const NewArrivalProducts = () => {
           <Link className="text-rgba-gray-700 font-inter text-xs font-semibold" to="/">View all</Link>
         </div>
       </div>
-      <div className="">
-        {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
+    
+        
 
-        <div className="post-box">
-          <div className="bg-left"></div>
-          <div className="bg-right"></div>
-
-          <div className="post-heading">
-            <div className="heading-box">
-              <div className="pagination-slide">
-                <p className="swiper-paginations"></p>
-              </div>
-            </div>
-          </div>
-          <div className="post-conatin">
+        
+          <div className="">
             <Swiper
               autoplay={{ delay: 1000 }}
               spaceBetween={0}
@@ -610,8 +600,7 @@ const NewArrivalProducts = () => {
               })}
             </Swiper>
           </div>
-        </div>
-      </div>
+      
     </section>
   );
 };

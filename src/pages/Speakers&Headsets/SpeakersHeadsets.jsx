@@ -529,8 +529,8 @@ const SpeakersHeadsets = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-      <div className="flex  items-center  justify-between">
+    <section className="mt-4  backdrop-filter backdrop-blur-md pe-20 ps-20 py-4">
+      <div className="flex  items-center py-4 pe-2 justify-between">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
             Speakers & Headsets
@@ -554,22 +554,15 @@ const SpeakersHeadsets = () => {
       <div className="">
         {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
 
-        <div className="post-box">
-          <div className="bg-left"></div>
-          <div className="bg-right"></div>
 
-          <div className="post-heading">
-            <div className="heading-box">
-              <div className="pagination-slide">
-                <p className="swiper-paginations"></p>
-              </div>
-            </div>
-          </div>
-          <div className="post-conatin">
+     
+
+         
+          <div className="">
             <Swiper
               autoplay={{ delay: 1000 }}
               spaceBetween={0}
-              className={`p-3 ${"mySwiper"}`}
+              className={`${"mySwiper"}`}
               ref={SlideRef}
               slidesPerView={6}
               breakpoints={{
@@ -589,6 +582,11 @@ const SpeakersHeadsets = () => {
                 1024: {
                   slidesPerView: 6,
                   spaceBetween: 40,
+                },
+
+                1536: {
+                  slidesPerView: 6,
+                  spaceBetween: 50,
                 },
               }}
               onSlideChange={onSlideChange}
@@ -621,7 +619,7 @@ const SpeakersHeadsets = () => {
               })}
             </Swiper>
           </div>
-        </div>
+    
       </div>
     </section>
   );

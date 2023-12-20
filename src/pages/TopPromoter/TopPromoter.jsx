@@ -75,7 +75,7 @@ const TopPromoter = () => {
               <span className="text-xs	">1.2k</span>
             </div>
 
-            <button className="button__style "><span className="follwo__style">Follow</span></button>
+            <button className="button__style_seller "><span className="follwo__style_seller">Follow</span></button>
           </div>
         </div>
       </div>

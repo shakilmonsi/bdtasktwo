@@ -176,8 +176,8 @@ const LaptopAccessories = () => {
   const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-      <div className="flex  items-center  justify-between">
+    <section className="mt-4 backdrop-filter backdrop-blur-md ps-14 pe-20 py-4">
+      <div className="flex  items-center ps-7 py-3 px-1  justify-between">
         <h6 className="text-gray-700 font-inter text-base font-semibold">
           Laptop & Accessories
         </h6>

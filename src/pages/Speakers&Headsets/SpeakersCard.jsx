@@ -6,8 +6,8 @@ function SpeakersCard(props) {
     const { trend, userVerifide, hot, grystart,star,love,coopy,ay,addCard ,img,verifide} = props;
 
     return (
-        <div className="">
-        <div className="card w-[233px] h-[px] ms-5 rounded-md bg-white shadow-md p-7 overflow-hidden	">
+        <div className=" me-14">
+        <div className="card -ms-1   w-[233px] h-[px]  rounded-md bg-white shadow-md p-7 overflow-hidden	">
           <div className="bg-white 	">
             <div className="bg-red m-3">
               <img src={img} alt="Shoes" className="  mt-2 p-4" />

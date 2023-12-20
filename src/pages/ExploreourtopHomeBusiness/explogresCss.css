@@ -1,0 +1,18 @@
+.userName__Style {
+    color: var(--Black, #2A2A2A);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.total__user{
+    color: var(--Black, #2A2A2A);
+
+/* 12 med */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}

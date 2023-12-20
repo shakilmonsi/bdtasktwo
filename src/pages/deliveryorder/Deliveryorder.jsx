@@ -4,7 +4,7 @@ import car from "../../assets/deliveryorder/1269947_157794-OV28G6-512.png";
 import Cartcuate   from "../../assets/deliveryorder/Add to Cart-cuate 1.png"
 function Deliveryorder(props) {
   return (
-  <div className="rounded-md py-2" style={{backgroundColor:"#FFFEE4"}}>
+  <div className="rounded-md   py-4   pe-20 ps-14" style={{backgroundColor:"#FFFEE4"}}>
       <div className="flex justify-between	px-14">
       <div className="flex  items-center gap-20">
         <div>

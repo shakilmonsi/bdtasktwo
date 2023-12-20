@@ -6,10 +6,12 @@ import {} from "swiper";
 
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+import Medal from "../../assets/explorOurTopHomeBusinessimg/verified (1).svg";
 
-import Medal from "../../assets/promotorImg/logo/Medal 5.svg";
-import promoterlogo from "../../assets/promotorImg/logo/promoter.png";
+import promoterlogo from "../../assets/explorOurTopHomeBusinessimg/homeseller.png";
+
 import rating from "../../assets/promotorImg/logo/rating.svg";
+
 import Frame from "../../assets/promotorImg/logo/Frame (1).svg";
 
 // import img  lnik
@@ -21,7 +23,6 @@ import promoter5 from "../../assets/promotorImg/promoter5.png";
 import promoter6 from "../../assets/promotorImg/promoter6.png";
 import promoter7 from "../../assets/promotorImg/promoter7.png";
 import promoter8 from "../../assets/promotorImg//promoter9.png";
-
 
 import { Link } from "react-router-dom";
 import ExploreoCard from "./ExploreoCard";
@@ -239,74 +240,77 @@ function ExploreourtopHomeBusiness(props) {
   ];
 
   return (
-  <section className=" bg-yellow-50 shadow-md px-10  py-10 mt-6 overflow-hidden">
-
-    <div  className="flex justify-between	"> 
-      <div>
-        <h4 className="text-gray-700 font-inter text-md font-medium">Explore our top Home Business</h4>
+    <section className=" shadow-md ms-20 me-20  mt-6 overflow-hidden">
+      <div className="flex justify-between ps-2 pe-2	">
+        <div>
+          <h4 className="text-gray-700 font-inter text-md font-medium">
+            Explore our top Home Business
+          </h4>
+        </div>
+        <div>
+          <Link
+            className="text-gray-800 font-inter text-xs font-semibold"
+            to="/Viewall"
+          >
+            View all
+          </Link>
+        </div>
       </div>
-      <div>
-        <Link className="text-gray-800 font-inter text-xs font-semibold" to="/Viewall">View all</Link>
-      </div>
-       </div>
       <Swiper
-      spaceBetween={30}
-      slidesPerView={9}
-      breakpoints={{
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-     
-        1024: {
-          slidesPerView: 9,
-          spaceBetween: 40,
-        },
-      }}
+        spaceBetween={30}
+        slidesPerView={9}
+        breakpoints={{
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
 
-
-      centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Navigation]}
-      className="mySwiper mt-4"
-    >
-    
-      {Products.map((item) => {
-        return (
-          <SwiperSlide key={item.id}>
-            <ExploreoCard
-              key={item.id}
-              image={item.img}
-              title={item.name}
-              price={item.price}
-              promoterlogo={item.promoterlogo}
-              delPirce={item.delPirce}
-              Medal={item.Medal}
-              Frame={item.Frame}
-              rating={item.rating}
-              description={item.description}
-              alt={item.name}
-            />
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
-  </section>
+          1024: {
+            slidesPerView: 9,
+            spaceBetween: 40,
+          },
+        }}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className="mySwiper "
+      >
+        {Products.map((item) => {
+          return (
+            <SwiperSlide key={item.id}>
+              <ExploreoCard
+                key={item.id}
+                image={item.img}
+                title={item.name}
+                price={item.price}
+                promoterlogo={item.promoterlogo}
+                delPirce={item.delPirce}
+                Medal={item.Medal}
+                Frame={item.Frame}
+                rating={item.rating}
+                description={item.description}
+                alt={item.name}
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </section>
   );
 }
 

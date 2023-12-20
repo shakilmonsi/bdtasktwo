@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -20,7 +20,8 @@ import trend from "../../assets/FollowedProducts/logo/trend.svg";
 import hot from "../../assets/FollowedProducts/logo/hot.svg";
 import userVerifide from "../../assets/FollowedProducts/logo/userVerifide.svg";
 import addCard from "../../assets/FollowedProducts/logo/cart white.png";
-import FollowedCard from "./FollowedCard";
+import FollowedCard from "./FollowedCard"
+
 import { Link } from "react-router-dom";
 
  function FollowedProducts(props)  {
@@ -507,59 +508,105 @@ import { Link } from "react-router-dom";
     },
   ];
 
-  return (
-  <section className=" bg-yellow-50 shadow-md p-10 bg-slate-200	">
-    <div  className="flex justify-between	"> 
-      <div>
-        <h4 className="text-gray-700 font-inter text-md font-medium">Followed Products</h4>
-      </div>
-      <div>
-        <Link className="text-gray-800 font-inter text-xs font-semibold" to="/Viewall">View all</Link>
-      </div>
-       </div>
-      <Swiper
-      spaceBetween={30}
-      slidesPerView={6}
-      centeredSlides={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Navigation]}
-      className="mySwiper mt-4"
-    >
+
+    const [slideBegOrNot, handleSlideByState] = useState({
+      isFirst: true,
+      isLast: false,
+    });
+    const SlideRef = useRef();
   
-
-      {followedProducts?.map((item) => {
-        return (
-          <SwiperSlide key={item.id}>
-            <FollowedCard
-              trend={item.trend}
-              userVerifide={item.userVerifide}
-              hot={item.hot}
-              verifide={item.verifide}
-              grystart={item.grystart}
-              star={item.star}
-              love={item.love}
-              coopy={item.coopy}
-              ay={item.ay}
-              addCard={item.addCard}
-              img={item.img}
-              key={item.id}
-
-
-
-            />
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
-  </section>
-  );
-};
+    const handleNext = () => {
+      SlideRef.current.swiper.slideNext();
+    };
+  
+    const handlePrev = () => {
+      SlideRef.current.swiper.slidePrev();
+    };
+  
+    const onSlideChange = (swiper) => {
+      handleSlideByState({
+        isFirst: swiper.isBeginning,
+        isLast: swiper.isEnd,
+      });
+    };
+  
+    const { isLast, isFirst } = slideBegOrNot;
+  
+    return (
+      <section className="mt-4 backdrop-filter backdrop-blur-md ps-20 pe-20 py-4">
+      <div className="flex  items-center  justify-between py-4 pe-1">
+          <div className="flex items-center gap-6	">
+            <h6 className="text-gray-700 font-inter text-base font-semibold">
+            Followed Products       </h6>
+          </div>
+          <div className="">
+            <Link className="text-rgba-gray-700 font-inter text-xs font-semibold" to="/">View all</Link>
+          </div>
+        </div>
+      
+          
+  
+          
+            <div className="">
+              <Swiper
+                autoplay={{ delay: 1000 }}
+                spaceBetween={0}
+                className={`p-3 ${"mySwiper"}`}
+                ref={SlideRef}
+                slidesPerView={6}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  480: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+  
+                  1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                  },
+                }}
+                onSlideChange={onSlideChange}
+                pagination={{
+                  el: ".swiper-paginations",
+                  type: "fraction",
+                }}
+                navigation={false}
+                modules={[Pagination, Navigation, Autoplay]}
+              >
+                {followedProducts?.map((item) => {
+                  return (
+                    <SwiperSlide key={item.id}>
+                      <FollowedCard
+                        trend={item.trend}
+                        userVerifide={item.userVerifide}
+                        hot={item.hot}
+                        verifide={item.verifide}
+                        grystart={item.grystart}
+                        star={item.star}
+                        love={item.love}
+                        coopy={item.coopy}
+                        ay={item.ay}
+                        addCard={item.addCard}
+                        img={item.img}
+                        key={item.id}
+                      />
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+            </div>
+        
+      </section>
+    );
+  };
+  
 
 export default FollowedProducts;

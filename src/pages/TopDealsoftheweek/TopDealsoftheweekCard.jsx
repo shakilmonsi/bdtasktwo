@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 function TopDealsoftheweekCard(props) {
     const { trend, userVerifide, hot, grystart,star,love,coopy,ay,addCard ,img,verifide} = props;
-
+  
     return (
         <div className="">
-        <div className="card w-[233px] h-[420px] ms-5 rounded-md bg-white shadow-md p-7 overflow-hidden	">
+        <div className="card w-[233px] h-[420px] -ms-1 rounded-md bg-white shadow-md p-7 overflow-hidden	">
           <div className="bg-white 	">
             <div className="bg-red m-3 -mt-8">
               <img src={img} alt="Shoes" className="  mt-2 p-4" />
@@ -53,7 +53,7 @@ function TopDealsoftheweekCard(props) {
   
           <div className="card-body">
     
-
+  
     <div className=''>           <div >
               <p className="text-gray-800 font-inter text-md font-medium leading-normal ">Intel Corei512thGenCPU.....!</p>
   
@@ -114,23 +114,20 @@ function TopDealsoftheweekCard(props) {
   
   </div></div>
   
- {/* // add to card button  */}
- <div className=' -ms-11 '>
+  {/* // add to card button  */}
+  <div className=' -ms-11 '>
   <Link to="" className="add_card_button justify-center flex gap-2" >                
   <img className="h-4 w-4" src={addCard}  alt="" /> <span className="text-white font-inter text-base font-medium leading-normal"> Add to card</span>  
    </Link>
    </div>
-
-          </div>
   
-   
- 
+          </div>
   </div>
   
   
         </div>
     );
-}
+  }
 
 
 export default TopDealsoftheweekCard;

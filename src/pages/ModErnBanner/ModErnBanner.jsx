@@ -23,7 +23,8 @@ const bannerThre =[
 ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-3	 gap-x-4 py-2 px-10">
+<div className="ps-20 pe-20 mt-3">
+<div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-y-3	 gap-x-4 py-4 ">
 {
   bannerThre.map(bannerOne=><did key={bannerOne.id}>
       <img className=" rounded-md	 h-[308px] w-[616px]" src={bannerOne.bannerImg} alt="banner2"></img>
@@ -33,6 +34,7 @@ const bannerThre =[
 
         
     </div>
+</div>
   );
 };
 

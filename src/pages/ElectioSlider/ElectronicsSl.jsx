@@ -141,9 +141,9 @@ const ElectronicsSl=()=> {
      const { isLast, isFirst } = slideBegOrNot;
 
      return (
-      <section className='mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4'> 
+      <section className='mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  ps-20  pe-20   py-4'> 
 
-<div className='flex gap-8 justify-center	items-center mt-4'>
+<div className='flex gap-8 justify-center	items-center mt-4 '>
 
 <div className='flex'>
 <img className='w-8 h-8' src={fire} alt='fire'></img>
@@ -190,7 +190,7 @@ const ElectronicsSl=()=> {
 </div>
 
 
-<div className='flex  items-center  justify-between'>
+<div className='flex  items-center  justify-between pe-8 py-4'>
    <div className='flex items-center gap-6	'>
 <Link className='text-red-500 font-inter text-xl font-semibold'>Electronics </Link>
 <Link className='text-gray-900 font-inter text-xl font-medium'>Clothing's </Link>

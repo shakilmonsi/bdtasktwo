@@ -529,8 +529,8 @@ const RecommendedForYou = () => {
    const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-20 py-4">
-      <div className="flex  items-center  justify-between">
+    <section className="mt-4  ps-20 pe-20   ">
+      <div className="flex  items-center  justify-between py-4 pe-8">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
           Recommended For You
@@ -541,27 +541,43 @@ const RecommendedForYou = () => {
         </div>
       </div>
 
-      <div className="">
-        {/* <h1 className="heading">Post Carousel Using React Swiper Js</h1> */}
+ 
 
-        <div className="post-box">
-          <div className="bg-left"></div>
-          <div className="bg-right"></div>
+    
 
-          <div className="post-heading">
-            <div className="heading-box">
-              <div className="pagination-slide">
-                <p className="swiper-paginations"></p>
-              </div>
-            </div>
-          </div>
-          <div className="post-conatin">
+          <div className="">
             <Swiper
               autoplay={{ delay: 1000 }}
               spaceBetween={0}
               className={` ${"mySwiper"}`}
               ref={SlideRef}
-              slidesPerView={6}
+              slidesPerView={1}
+
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+
+                1024: {
+                  slidesPerView: 6,
+                  spaceBetween: 40,
+                },
+
+                1536: {
+                  slidesPerView: 6,
+                  spaceBetween: 50,
+                },
+              }}
+              
               onSlideChange={onSlideChange}
               pagination={{
                 el: ".swiper-paginations",
@@ -592,8 +608,8 @@ const RecommendedForYou = () => {
               })}
             </Swiper>
           </div>
-        </div>
-      </div>
+
+      
     </section>
   );
 };

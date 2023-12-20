@@ -7,7 +7,7 @@ import ply from "../../assets/appimg/ply.svg";
 
 const Getthebestap = () => {
   return (
-    <div className="bg-gradient-to-r from-yellow-100 to-teal-400 bg-opacity-25   flex w-screen   py-8  -ms-6 justify-center items-center">
+    <div className="bg-gradient-to-r from-yellow-100 to-teal-400 bg-opacity-25    pe-24 ps-14  flex w-screen  mt-3 py-8  -ms-6 justify-center items-center">
     {/* <div className="flex w-screen h-120 p-[24px 119.982px 25px 119px] justify-center items-center bg-gradient-to-r from-rgba-yellow-300 via-transparent to-rgba-teal-500"> */}
       <div className=" ps-14 flex gap-x-20	 items-center sm:overflow-y-auto ">
 

@@ -7,20 +7,27 @@ import {} from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 
-import Medal from "../../assets/promotorImg/logo/Medal 5.svg";
-import promoterlogo from "../../assets/promotorImg/logo/promoter.png";
+
+import Medal from "../../assets/explorOurTopHomeBusinessimg/verified (1).svg";
+
+import promoterlogo from "../../assets/topBassnerssSeller/logo/business seller.png";
+
 import rating from "../../assets/promotorImg/logo/rating.svg";
-import Frame from "../../assets/promotorImg/logo/Frame (1).svg";
+
+import Frame from "../../assets/promotorImg/logo/Frame (1).svg"
 
 // import img  lnik
-import promoter from "../../assets/promotorImg/promore1.png";
-import promoter2 from "../../assets/promotorImg/promoter2.png";
-import promoter3 from "../../assets/promotorImg/promoter3.png";
-import promoter4 from "../../assets/promotorImg/promoter4.png";
-import promoter5 from "../../assets/promotorImg/promoter5.png";
-import promoter6 from "../../assets/promotorImg/promoter6.png";
-import promoter7 from "../../assets/promotorImg/promoter7.png";
-import promoter8 from "../../assets/promotorImg//promoter9.png";
+import promoter from "../../assets/topBassnerssSeller/img1.png";
+import promoter2 from "../../assets/topBassnerssSeller/img2.png";
+
+
+
+import promoter3 from "../../assets/topBassnerssSeller/img3.png";
+import promoter4 from "../../assets/topBassnerssSeller/img4.png";
+import promoter5 from "../../assets/topBassnerssSeller/img5.png";
+import promoter6 from "../../assets/topBassnerssSeller/img6.png";
+import promoter7 from "../../assets/topBassnerssSeller/img7.png";
+import promoter8 from "../../assets/topBassnerssSeller/img8.png";
 
 import { Link } from "react-router-dom";
 import ExplorsellersCard from "./ExplorsellersCard";
@@ -238,9 +245,9 @@ function Exploreourtopbusinesssellers(props) {
   ];
 
   return (
-  <section className=" bg-yellow-50 shadow-md px-10  py-10 mt-6 overflow-hidden">
+  <section className=" bg-yellow-50 shadow-md  ps-20 pe-20  py-6 mt-6 ">
 
-    <div  className="flex justify-between	"> 
+    <div  className="flex justify-between	py-4"> 
       <div>
         <h4 className="text-gray-700 font-inter text-md font-medium">Explore our top business sellers</h4>
       </div>
@@ -250,7 +257,7 @@ function Exploreourtopbusinesssellers(props) {
        </div>
       <Swiper
       spaceBetween={30}
-      slidesPerView={9}
+      slidesPerView={10}
       breakpoints={{
         320: {
           slidesPerView: 2,
@@ -266,7 +273,7 @@ function Exploreourtopbusinesssellers(props) {
         },
      
         1024: {
-          slidesPerView: 9,
+          slidesPerView: 10,
           spaceBetween: 40,
         },
       }}
@@ -282,7 +289,7 @@ function Exploreourtopbusinesssellers(props) {
       }}
       navigation={true}
       modules={[Autoplay, Navigation]}
-      className="mySwiper mt-4"
+      className="mySwiper "
     >
     
       {Products.map((item) => {

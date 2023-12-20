@@ -22,12 +22,13 @@ import Black from "../../Black/Black";
 import Exploreourtopbusinesssellers from "../../Exploreourtopbusinesssellers/Exploreourtopbusinesssellers";
 import TopDealsoftheweek from "../../TopDealsoftheweek/TopDealsoftheweek";
 import DelasSection from "../../DealsYouSection/DelasSection";
+import Heros from "../../Hero/Heros";
 
 const Home = () => {
   return (
     <div>
-      {/* <HeroBanner></HeroBanner> */}
 
+<Heros></Heros>
       <TopPromoterSlider></TopPromoterSlider>
       <ElectronicsSl></ElectronicsSl>
       <FollowedProducts></FollowedProducts>

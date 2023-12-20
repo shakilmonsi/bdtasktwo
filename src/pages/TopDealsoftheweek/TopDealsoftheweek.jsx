@@ -530,8 +530,8 @@ const TopDealsoftheweek = () => {
    const { isLast, isFirst } = slideBegOrNot;
 
   return (
-    <section className="mt-4 bg-red-200 bg-opacity-50 backdrop-filter backdrop-blur-md  px-12 py-4">
-      <div className="flex  items-center  justify-between py-4">
+    <section className="mt-4  ps-14 pe-14 py-4">
+      <div className="flex  items-center  justify-between py-4 ps-4 pe-4">
         <div className="flex items-center gap-6	">
           <h6 className="text-gray-700 font-inter text-base font-semibold">
           Top Deals of the week          </h6>
@@ -554,6 +554,26 @@ const TopDealsoftheweek = () => {
               className={` ${"mySwiper"}`}
               ref={SlideRef}
               slidesPerView={6}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+
+                1024: {
+                  slidesPerView: 6,
+                  spaceBetween: 40,
+                },
+              }}
+
               onSlideChange={onSlideChange}
               pagination={{
                 el: ".swiper-paginations",

@@ -1,17 +1,19 @@
-import React from 'react'
-import BlackBanner from './BlackBanner/BlackBanner';
-import BlackProducts from './BlackProducts';
+import React from "react";
+import BlackBanner from "./BlackBanner/BlackBanner";
+import BlackProducts from "./BlackProducts";
 function Black(props) {
-    return (
-        <div className='flex items-center gap-14 ps-12 pe-14'>
-
-<div className='w-3/12 hidden md:block'><BlackBanner></BlackBanner></div>
-            <div className='w-9/12	'>
-<BlackProducts></BlackProducts>
-            </div>
-            
-        </div>
-    );
+  return (
+   <div className=" bg-[#F1EAE1] py-8 ps-20 pe-20 ">
+     <div className="flex items-center">
+      <div className="w-3/12 hidden md:block">
+        <BlackBanner></BlackBanner>
+      </div>
+      <div className="w-9/12  ps-14	">
+        <BlackProducts></BlackProducts>
+      </div>
+    </div>
+   </div>
+  );
 }
 
 export default Black;
