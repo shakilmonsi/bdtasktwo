@@ -1,0 +1,26 @@
+
+.leyout_site{
+    height: 250px;
+    width: 59px;
+    display: inline-flex;
+padding: 4px 2px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 5px;
+    border-radius: 15px 0px 0px 15px;
+background: #FFF;
+
+/* shadow */
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.20);
+}
+.card_number{
+    display: inline-flex;
+    padding: 0.5px 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+border-radius: 50px;
+background: rgba(42, 42, 42, 0.95);
+}

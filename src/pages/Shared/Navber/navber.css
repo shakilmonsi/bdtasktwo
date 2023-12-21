@@ -1,0 +1,26 @@
+.navber__body{
+    background: var(--BC-BG, #FAFAFA);
+
+/* IS top nav */
+box-shadow: -2px -2px 16px 0px rgba(217, 217, 217, 0.85) inset;
+}
+.navber__two_style{
+    border: 1.5px solid var(--White-U, #F7F6F3);
+background: var(--White, #FFF);
+}
+
+.accout__style{
+
+    display: flex;
+width: 30px;
+height: 30px;
+padding: 7.5px 7.455px 6.5px 8px;
+justify-content: center;
+align-items: center;
+    border-radius: 100px;
+background: #CDCDCD;
+}
+.from_tag_style{
+    border-radius: 10px;
+border: 1.5px solid var(--Border, #B0B0B0);
+}

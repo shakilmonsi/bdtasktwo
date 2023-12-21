@@ -1,4 +1,6 @@
 import React from "react";
+
+import "./navber.css"
 import arobinCard from "../../../assets/arobinCard.png";
 import locationlogo from "../../../assets/Location (1).svg";
 import car from "../../../assets/car.png";
@@ -7,11 +9,31 @@ import mark from "../../../assets/mark.svg";
 import net from "../../../assets/net.svg";
 import moon from "../../../assets/moon.svg";
 
+
+// two setup navber ok 
+import menu from "../../../assets/navberlogo/menu.svg";
+import Layer from "../../../assets/navberlogo/layer.png";
+import notification from "../../../assets/navberlogo/notification.png";
+import Group from "../../../assets/navberlogo/Group 38.svg";
+
+
+import scren from "../../../assets/navberlogo/inputlogo/scren.png";
+import arrow from "../../../assets/navberlogo/inputlogo/arrow down fill (2).svg";
+import screning from "../../../assets/navberlogo/inputlogo/search.svg";
+import category from "../../../assets/navberlogo/inputlogo/category.svg";
+import filter from "../../../assets/navberlogo/inputlogo/filter.png";
+import { Link } from "react-router-dom";
+
+
+
+
+
+
 const Navber = () => {
   return (
     <div>
 
-      <div className="flex items-center  justify-around ">
+      <div className="flex items-center navber__body  py-1 justify-around ">
         <div className="flex items-center gap-2">
           <div className="flex items-centergap-1 ">
             <img className=" w-6 h-6 " src={locationlogo} alt=""></img>
@@ -82,32 +104,26 @@ const Navber = () => {
       {/* // Navber  to  */}
 
 
-<div>
-{/* 
-<div className="navbar border border-white-U bg-white">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-      </div>
-      <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Homepage</a></li>
-        <li><a>Portfolio</a></li>
-        <li><a>About</a></li>
-      </ul>
-    </div>
-  </div>
+<div className="flex items-center justify-between  pb-7 pt-3  mt-2 navber__two_style ">
 
-  <form>
-  <label
-    htmlFor="search"
-    className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-  >
-    Search
-  </label>
-  <div className="relative">
-    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-      <svg
+<div className="flex items-center gap-3 ps-32 ">
+  <img className="h-2 w-[18.70px]" src={menu} alt=""></img>
+  <img  className="w-[76px]	 h-8	" src={Layer} alt=""></img>
+</div>
+
+
+<div>
+<form className="from_tag_style" style={{width:"1113px",}}>
+  
+  <div className="relative bg-[#FFFF]">
+    <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none ">
+    
+<div className="rounded-full border p-1 border-1 border-solid border-var(--Border-v2, rgba(176, 176, 176, 0.15)) bg-var(--bg, #F1F1F1)">
+<img  className="w-[14px] h-[14px]   " src={category} alt="logo"></img>
+
+</div>
+
+      {/* <svg
         className="w-4 h-4 text-gray-500 dark:text-gray-400"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
@@ -121,38 +137,70 @@ const Navber = () => {
           strokeWidth={2}
           d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
         />
-      </svg>
+      </svg> */}
+   
+   
     </div>
     <input
       type="search"
       id="search"
-      className="block w-100 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      className="block w-full p-4 ps-96 text-sm rounded-md border-1.5 border-solid border-var(--Border, #B0B0B0"
       placeholder="Search"
       required=""
     />
-   
+{/* //screning  */}
+
+<div  className="text-white absolute  -mt-9  flex justify-center  ms-[360px]" >
+<img  className="w-5 h-5   " src={screning} alt="logo"></img>
+
+    </div>
+
+
+<div  className="text-white absolute  -mt-10 end-10" >
+   <div className="rounded-full border p-1 border-1 border-solid border-var(--Border-v2, rgba(176, 176, 176, 0.15)) bg-var(--bg, #F1F1F1)">
+<img  className="w-4 h-4   " src={scren} alt="logo"></img>
+</div>
+    </div>
+
+
+
+    <div 
+      className="text-white absolute end-2.5   -mt-10 "
+    >
+   <div className="rounded-full border p-1 border-1 border-solid border-var(--Border-v2, rgba(176, 176, 176, 0.15)) bg-var(--bg, #F1F1F1)">
+<img  className="w-4 h-4   " src={filter} alt="logo"></img>
+</div>
+    </div>
+
+    
+
   </div>
 </form>
 
-  
+</div>
 
 
 
 
-  <div className="navbar-end">
-    <button className="btn btn-ghost btn-circle">
-      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-    </button>
-    <button className="btn btn-ghost btn-circle">
-      <div className="indicator">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-        <span className="badge badge-xs badge-primary indicator-item"></span>
-      </div>
-    </button>
-  </div>
-</div> */}
 
+<div className="flex items-center gap-8 pe-20">
+<div className="flex items-center gap-1">
+<img src={notification} alt=""></img>
+<Link className="text-14 font-inter font-normal text-gray-700">sel</Link>
+<img  className="w-2 h-2   " src={arrow} alt="logo"></img>
+</div>
+ 
+<div className="flex  gap-1 items-center">
+<div className="accout__style">
+<img  className="w-4 h-4   " src={Group} alt="logo"></img>
+</div>
 
+<p className="text-14 font-inter font-normal text-gray-700">accout</p>
+<img  className="w-2 h-2   " src={arrow} alt="logo"></img>
+
+</div>
+
+</div>
 
 
 </div>

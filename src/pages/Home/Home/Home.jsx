@@ -23,19 +23,21 @@ import Exploreourtopbusinesssellers from "../../Exploreourtopbusinesssellers/Exp
 import TopDealsoftheweek from "../../TopDealsoftheweek/TopDealsoftheweek";
 import DelasSection from "../../DealsYouSection/DelasSection";
 import Heros from "../../Hero/Heros";
+import Sitebar from "../../SiteInfo/Sitebar";
 
 const Home = () => {
   return (
-    <div>
+    <div className="">
 
 <Heros></Heros>
+
       <TopPromoterSlider></TopPromoterSlider>
       <ElectronicsSl></ElectronicsSl>
       <FollowedProducts></FollowedProducts>
-
+{/* 
       <ModErnBanner></ModErnBanner>
       <TopPromoter></TopPromoter>
-      <Electronics></Electronics>
+      <Electronics></Electronics> */}
 
    
       <DelasSection></DelasSection>

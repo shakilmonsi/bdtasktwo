@@ -238,7 +238,7 @@ function TopPromoterSlider(props) {
   ];
 
   return (
-  <section className=" bg-yellow-50 shadow-md ps-20  pe-20 py-8 mt-6 overflow-hidden">
+  <section className=" bg-yellow-50 shadow-md ps-20 mt-2 pe-20 py-8 overflow-hidden">
 
     <div  className="flex justify-between	 pe-4 "> 
       <div>

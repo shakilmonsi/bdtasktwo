@@ -1,31 +1,41 @@
 import React from "react";
 
 
-function SliderContent({ activeIndex, sliderImage }) {
-  return (
-    <section  >  
- 
-         {sliderImage.map((slide, index) => ( <div  key={index} className={index === activeIndex ? "slides active" : "inactive"} >
-      
-      
+const SliderContent = (props) => {
+  const { image, imgFive, Discount, imgTwo, imgThre,Layer } = props;
+  return <div>
+<div className="flex">
+<div className="flex items-center gap-44">
 
-
-<div className="flex items-center	pe-44">  
-
-
-
-
-  <img style={{paddingLeft:"80px", margin:60}} src={slide.urls} alt="" />
-  <img style={{paddingLeft:"80px", margin:60}} src={slide.last} alt="" />
-  <img style={{paddingLeft:"80px", margin:60}} src={slide.Layer} alt="" />
-  <img style={{paddingLeft:"80px", margin:60}} src={slide.frist2} alt="" />
-  
+  <div>
+  <img src={imgFive} alt="image"></img>
   </div>
-  
-        </div>
-      ))}
-    </section>
-  );
-}
+ 
+  <div className="flex gap-20 items-center">
+    <div> 
+      <img src={Layer} alt="image -me-8"></img>
+      <br></br>
+      <img src={imgThre} alt="image"></img>
+    </div>
+ <div>
+ <img src={Discount} alt="image"></img>
+ </div>
+ 
+  </div>
+ 
+  <div>
+  <img src={image} alt="image"></img>
+  </div>
+ 
+
+
+</div>
+
+
+</div>
+
+
+  </div>;
+};
 
 export default SliderContent;
