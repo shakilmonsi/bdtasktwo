@@ -104,7 +104,7 @@ const Navber = () => {
       {/* // Navber  to  */}
 
 
-<div className="flex items-center justify-between  pb-7 pt-3  mt-2 navber__two_style ">
+<div className="flex items-center justify-between  py-1 navber__two_style ">
 
 <div className="flex items-center gap-3 ps-32 ">
   <img className="h-2 w-[18.70px]" src={menu} alt=""></img>
@@ -113,7 +113,7 @@ const Navber = () => {
 
 
 <div>
-<form className="from_tag_style" style={{width:"1113px",}}>
+<form className="from_tag_style" style={{width:"1113px"}}>
   
   <div className="relative bg-[#FFFF]">
     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none ">
@@ -144,7 +144,7 @@ const Navber = () => {
     <input
       type="search"
       id="search"
-      className="block w-full p-4 ps-96 text-sm rounded-md border-1.5 border-solid border-var(--Border, #B0B0B0"
+      className="block w-full p-4 ps-96 text-sm rounded-md border-1.5 bg-[#FFF]"
       placeholder="Search"
       required=""
     />

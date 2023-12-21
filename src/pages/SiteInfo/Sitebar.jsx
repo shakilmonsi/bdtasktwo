@@ -9,7 +9,7 @@ import cart from "../../assets/SitInfologo/cart (1).png";
 
 const Sitebar = () => {
   return (
-    <div  className='fixed	 absolute' style={{marginTop:250,marginLeft:1627}}>
+    <div  className=' absolute' style={{marginTop:180,marginLeft:1627 ,position:"fixed"}}>
       <div className="leyout_site " style={{rowGap:"18px"}}>
         <div className=" ">
           <p
