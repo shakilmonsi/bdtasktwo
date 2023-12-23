@@ -9,13 +9,13 @@ const Getthebestap = () => {
   return (
     <div className="bg-gradient-to-r from-yellow-100 to-teal-400 bg-opacity-25    pe-24 ps-14  flex w-screen  mt-3 py-8  -ms-6 justify-center items-center">
     {/* <div className="flex w-screen h-120 p-[24px 119.982px 25px 119px] justify-center items-center bg-gradient-to-r from-rgba-yellow-300 via-transparent to-rgba-teal-500"> */}
-      <div className=" ps-14 flex gap-x-20	 items-center sm:overflow-y-auto ">
+      <div className=" ps-14 sm:flex gap-x-20	 items-center sm:overflow-y-auto ">
 
         <div>
           <p className="text-opacity-90 font-inter text-base font-medium text-gray-700">Get the best experience by downloading our mobile app </p>
         </div>
 
-        <div className="flex items-center gap-x-16	">
+        <div className="sm:flex items-center my-3 gap-x-16	">
           
           <img src={scr} alt="src"></img>
 

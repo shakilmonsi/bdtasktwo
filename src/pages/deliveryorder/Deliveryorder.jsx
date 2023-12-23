@@ -5,8 +5,8 @@ import Cartcuate   from "../../assets/deliveryorder/Add to Cart-cuate 1.png"
 function Deliveryorder(props) {
   return (
   <div className="rounded-md   py-4   pe-20 ps-14" style={{backgroundColor:"#FFFEE4"}}>
-      <div className="flex justify-between	px-14">
-      <div className="flex  items-center gap-20">
+      <div className="sm:flex justify-between	px-14">
+      <div className="  sm:flex  items-center gap-20">
         <div>
           <img className="h-20  w-[106.988px]" src={car} alt="car"></img>
         </div>
@@ -42,9 +42,9 @@ function Deliveryorder(props) {
         </div>
       </div>
 {/* //  step 2222222222222222222222222222222 */}
-      <div className="flex  items-center gap-20">
+      <div className="sm:flex  items-center gap-20">
         <div>
-          <img className="h-20  w-[106.988px]" src={Cartcuate} alt="car"></img>
+          <img className="h-20    sm:w-[106.988px]" src={Cartcuate} alt="car"></img>
         </div>
 
         <div>

@@ -100,8 +100,8 @@ const CatagoryProduct=()=> {
 
 
 return (
-        <section className='flex items-center justify-center w-screen bg-white  ps-20 pr-24 '>
-                <div className='grid grid-cols-1 md:grid-cols-6  lg:grid-cols-12  gap-x- 2 gap-y-2 mt-2'>
+        <section className='flex items-center justify-center w-screen bg-white ms:ps-20 pr-24 '>
+                <div className='grid grid-cols-1 md:grid-cols-6  ms-32      lg:grid-cols-12  gap-x- 2 gap-y-2 mt-2'>
 
 
                         {

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "./deals.css"
 import {} from "swiper";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -333,9 +334,10 @@ const DealsYouMightLike = () => {
     return (
       <section className=" ps-2 pe-2 ">
  
-<div className='flex  items-center  justify-between pe-8 py-4'>
+<div className='flex  items-center  justify-between pe-2 py-2 ps-2'>
    <div className='flex items-center '>
-<Link className='text-red-500 font-inter text-xl font-semibold'>Electronics </Link>
+<p className='deals_you_might'>Deals You Might Like </p>
+
 
    </div>
 

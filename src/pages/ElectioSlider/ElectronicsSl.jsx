@@ -25,95 +25,75 @@ import img6 from '../../assets/electronice/elec4 (2).png';
 import ElecDataCard from './ElecDataCard';
 import { Link } from 'react-router-dom';
 
-const Products = [
-    {
-       id: 1,
-       name: 'Sony WNC Headset',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'bestSeller.',
-       img: img1,
-    },
-    {
-       id: 2,
-       name: 'Joyroom TWS Bluetooth',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'bestSeller.',
-       img: img2,
-    },
-    {
-       id: 2,
-       name: 'Sony Playstation 5',
-       description:
-          'bestSeller.',
-          price: 'SAR31821.00',
-          delPirce: 'SAR31821.00',
-       img: img3,
-    },
-    {
-       id: 2,
-       name: 'Electric Tea Kettle',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'bestSeller.',
-       img: img4,
-    },
+    
+const  TopElecData= [
+   {
+      id: 1,
+      name: 'Sony WNC Headset',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'bestSeller.',
+      img: img1,
+   },
+   {
+      id: 2,
+      name: 'Joyroom TWS Blu',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'bestSeller.',
+      img: img2,
+   },
+   {
+      id: 2,
+      name: 'Sony Playstation 5',
+      description:
+         'bestSeller.',
+         price: 'SAR31821.00',
+         delPirce: '5693.00 ',
+      img: img3,
+   },
+   {
+      id: 2,
+      name: 'Electric Tea ',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'bestSeller.',
+      img: img4,
+   },
 
-    {
-       id: 2,
-       name: 'Apple Watch Series 8',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'bestSeller',
-       img: img5,
-    },
-    {
-       id: 2,
-       name: 'Intel Core i5 12th Gen CPU .',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'BestSeller',
-       img: img6,
-    },
-    
-    {
-       id: 2,
-       name: 'Intel Core i5 12th Gen CPU..',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'BestSeller',
-       img: img6,
-    },
-    
-    {
-       id: 2,
-       name: 'Intel Core i5 12th Gen CPU .....',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'BestSeller',
-       img: img6,
-    },
-    
-    {
-       id: 2,
-       name: 'Intel Core i5 12th Gen CPU .....',
-       price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
-       description:
-          'BestSeller',
-       img: img6,
-    },
-    
+   {
+      id: 2,
+      name: 'Apple Watch  8',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'bestSeller',
+      img: img5,
+   },
+   {
+      id: 2,
+      name: 'Intel Core i5  .',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'BestSeller',
+      img: img6,
+   },
+   {
+      id: 2,
+      name: 'Intel Core i5CPU .',
+      price: 'SAR31821.00',
+      delPirce: '5693.00 ',
+      description:
+         'BestSeller',
+      img:  img6,
+      
+   },
    
- ];
+];
 
 const ElectronicsSl=()=> {
 
@@ -253,7 +233,7 @@ const ElectronicsSl=()=> {
 
 
       >
-         {Products.map((item) => {
+         {TopElecData.map((item) => {
             return (
                <SwiperSlide key={item.id}>
                   <ElecDataCard

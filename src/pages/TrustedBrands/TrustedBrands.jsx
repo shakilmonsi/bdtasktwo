@@ -47,8 +47,8 @@ function TrustedBrands(props) {
 
   return (
     <div className="bg-white ">
-      <div className=" ps-20 pe-10  py-8">
-      <div className=" grid grid-cols-1 md:grid-cols-4 lg:grid-cols-9  gap-y-4 gap-x-4 items-center ">
+      <div className="   ms:ps-20 pe-10  py-8">
+      <div className=" ps-40 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-9  gap-y-4 gap-x-4 items-center ">
         <div>
           <h5 className="text-gray-600 font-inter text-lg font-medium">
             Trusted Brands

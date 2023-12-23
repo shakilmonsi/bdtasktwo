@@ -1,0 +1,10 @@
+.deals_you_might{
+    color: var(--Black, #2A2A2A);
+
+/* 16 semi */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}

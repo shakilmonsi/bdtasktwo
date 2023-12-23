@@ -6,8 +6,9 @@ import owem4 from "../../assets/servicesimg/owem4.png"
 
 const Services=()=>{
     return (
-        <div className='ps-44 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  py-4 mt-5'>
+        <div className='sm:ps-44  ps-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  py-4 mt-5'>
 
+      
             <div className='flex items-center gap-10  px-4 py-3'>
                <div className='flex items-center gap-5'>
                <div>

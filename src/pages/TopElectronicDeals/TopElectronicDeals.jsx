@@ -27,7 +27,7 @@ const  TopElecData= [
     },
     {
        id: 2,
-       name: 'Joyroom TWS Bluetooth',
+       name: 'Joyroom TWS Blu',
        price: 'SAR31821.00',
        delPirce: 'SAR31821.00',
        description:
@@ -45,7 +45,7 @@ const  TopElecData= [
     },
     {
        id: 2,
-       name: 'Electric Tea Kettle',
+       name: 'Electric Tea ',
        price: 'SAR31821.00',
        delPirce: 'SAR31821.00',
        description:
@@ -55,7 +55,7 @@ const  TopElecData= [
 
     {
        id: 2,
-       name: 'Apple Watch Series 8',
+       name: 'Apple Watch  8',
        price: 'SAR31821.00',
        delPirce: 'SAR31821.00',
        description:
@@ -64,7 +64,7 @@ const  TopElecData= [
     },
     {
        id: 2,
-       name: 'Intel Core i5 12th Gen CPU .',
+       name: 'Intel Core i5  .',
        price: 'SAR31821.00',
        delPirce: 'SAR31821.00',
        description:
@@ -73,9 +73,9 @@ const  TopElecData= [
     },
     {
        id: 2,
-       name: 'Intel Core i5 12th Gen CPU .',
+       name: 'Intel Core i5CPU .',
        price: 'SAR31821.00',
-       delPirce: 'SAR31821.00',
+       delPirce: '5693.00 ',
        description:
           'BestSeller',
        img: img7,
@@ -85,7 +85,7 @@ const  TopElecData= [
 
 
     return (
-        <div className='ps-8 pe-24'>
+        <div className=' ps-24 sm:ps-8 sm:pe-24'>
                 <div  className="flex justify-between ps-8	 py-4 "> 
       <div>
         <h4 className="text-gray-700 font-inter text-md font-medium">Top Electronic Deals</h4>
